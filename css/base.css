@@ -1,0 +1,9 @@
+div {
+  background: #888;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center;
+  vertical-align: middle;
+}
