@@ -1,70 +1,87 @@
-.container {
+/* .container {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   flex-wrap: wrap;
 
   width: 100%;
-}
+} */
 
-#id-a {
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  }
+
+  #id-a {
   line-height: 75px;
   height: 10%;
   background-color: #515af3;
-}
+  }
 
-#id-b {
+  #id-b {
   line-height: 150px;
   height: 20%;
   background-color: #64e3ec;
-}
+  }
 
-#id-e {
+  #id-e {
   background-color: #f98328;
-}
+  }
 
-#id-f {
+  #id-f {
   background-color: #a2afef;
-}
+  }
 
-#id-g {
+  #id-g {
   background-color: #fe10c2;
-}
+  }
 
-#id-h {
+  #id-h {
   background-color: #25beef;
-}
+  }
 
-#id-c, #id-d {
+  #id-c, #id-d {
   line-height: 125px;
   height: 16%;
   background-color: #fc6178;
-}
+  /* text-align: center; */
+  }
 
-#id-d {
+  #id-d {
   background-color: #6f45bc;
-}
+  }
 
-#id-e, #id-f, #id-g, #id-h {
-  float: left;
+  #id-a, #id-b, #id-c, #id-d, #id-i {
+  width: 100%;
+  }
+
+  #id-e, #id-f, #id-g, #id-h {
+  /* float: left; */
   height: 250px;
   line-height: 250px;
   width: 50%;
-}
+  }
 
-#id-i {
+  #id-i {
   clear: both;
   line-height: 80px;
   height: 10%;
   background-color: #94d882;
+  }
+
 }
 
-@media (min-width: 768px) {
+/* Tablet */
+
+@media screen and (min-width: 768px) {
   .container {
     display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;  
-
-    max-width: 960px;
+    flex-direction: row;
+    flex-wrap:  wrap;
   }
 
   #id-a {
@@ -75,7 +92,9 @@
   }
   
   #id-b{
-    float: left;
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
     line-height: 600px;
     height: 600px;
     width: 20%;
@@ -115,22 +134,31 @@
   }
 
   #id-c, #id-d {
-    float: left;
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+
     line-height: 200px;
     height: 200px;
     width: 40%;
   }
   
   #id-e, #id-f, #id-g, #id-h {
-    float: left;
+    /* float: left; */
+    /* display: flex; */
+    /* flex-direction: row; */
+
+    display: flex;
+    flex-direction: row;
+    /* flex-flow: row wrap; */
     height: 250px;
     line-height: 250px;
     width: 20%;
   }
   
   #id-i {
-    clear: none;
-    float: left;
+    /* clear: none; */
+    /* float: left; */
     height: 150px;
     line-height: 150px;
     width: 80%;

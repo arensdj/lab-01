@@ -1,6 +1,12 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 div {
   background: #888;
-  box-sizing: border-box;
+  text-align: center;
+  /* box-sizing: border-box; */
 }
 
 p {
